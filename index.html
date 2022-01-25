@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body>
+  <body>
+    <script src="./index.js"></script>
 
-    <script src="index.js"></script>
-     
-    <div class="footer">
-
-        <div class="f-container">
-
-       
+    <div class="parent">
+      <div class="child1">
+      <h1 id="demo">Red</h1> 
+      </div>
+      <div class="child2">
+          <!-- <img class="id" src="./assets/car.jpg" alt=""> -->
+        <img
+          class="img"
+          src="./assets/istockphoto-903584510-612x612.jpg"
+          alt=""
+        />
+      </div>
+      <hr class="id" />
+      <div class="child3">
+        <button
+          class="button"
+          id="red"
+          onclick="fontcolor('#ee1212')"
+        ></button>
+        <button
+          class="button"
+          id="yellow"
+          onclick="fontcolor('#f7d61d')"
+        ></button>
+        <button
+          class="button"
+          id="blue"
+          onclick="fontcolor('#5ceb1a')"
+        ></button>
         
-    <button class="f-item1" style="background-color: red;" type="button" onclick="changeBackcolor('red');"></button>
-    <button class="f-item1" style="background-color:blue;" type="button" onclick="changeBackcolor1('blue');"></button>
-    <button class="f-item1" style="background-color:yellow;" type="button" onclick="changeBackcolor2('yellow');"></button>
-    
+      </div>
     </div>
-</div>
-
-</body>
-
+  </body>
 </html>

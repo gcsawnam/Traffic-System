@@ -17,9 +17,9 @@
   /* background-color: #bbb; */
 /* border-radius: 50%; */
 /* } */
-* {
-  margin: 0;
-  padding: 0;
+*{
+  margin:0;
+  padding:0;
   box-sizing: border-box;
 }
 body {
@@ -30,12 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-}
-.id{
-  height: 30vh;
-  width: 50%;
-
 }
 
 .child1 {
@@ -50,18 +44,19 @@ body {
   /* height: 90vh; */
   flex-wrap: wrap;
   align-items: center;
-  flex: 3;
+  flex:3;
 }
 
 .parent .child2 {
   flex: 6;
+  display: flex;
+ 
   
 }
-.child2 .img {
-  object-fit: fill;
-  border: 1px solid rebeccapurple;
-  height: 60vh;
-  width: 100%;
+.img{
+object-fit:cover;
+
+ 
 }
 
 .child3 #red {
