@@ -1,0 +1,26 @@
+.f-container{
+    display: flex;
+   
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: center ;
+
+    
+}
+.footer{
+  display: flex;
+flex-flow: wrap-reverse
+  flex-direction: ;
+}
+.f-item1{
+    padding: 30px;
+    margin: 30px;
+    height: 0px;
+  width: 0px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+}
+body{
+    
+  background-color: #bbb;
+}
