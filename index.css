@@ -56,12 +56,17 @@ body {
 .parent .child2 {
   flex: 6;
   
+  
+  
 }
 .child2 .img {
+  
   object-fit: fill;
   border: 1px solid rebeccapurple;
   height: 60vh;
   width: 100%;
+  flex: 1;
+  
 }
 
 .child3 #red {
@@ -79,4 +84,9 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 100%;
+}
+.child2 .car{
+position: absolute;
+top: 160px;
+
 }
