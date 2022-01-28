@@ -85,8 +85,10 @@ body {
   width: 100px;
   border-radius: 100%;
 }
-.child2 .car{
+.child2 #car1{
 position: absolute;
-top: 160px;
+top:180px;
+left: 20px;
+animation-delay: 0s;
 
 }
