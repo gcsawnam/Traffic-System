@@ -1,14 +1,55 @@
-function fontcolor(x)
-{
-document.getElementById("demo").style.color = x;
+let canmove = false;
+let greenbtn = document.getElementById("green");
+let car = document.getElementById("car1");
+var left = 10;
+let redbutton = document.getElementById("red");
+let cannotmove = false;
+var interval;
+let yellowbtn = document.getElementById('yellow');
+
+redbutton.addEventListener("click", function move1() {
+  console.log(cannotmove);
+  cannotmove = true;
+  console.log(cannotmove);
+  if (cannotmove) {
+    clearInterval(interval);
+  }
+});
+
+yellowbtn.addEventListener("click", function slowdown() {
+  interval = setInterval(() => {
+    moveright();
+  }, 800);
+
 }
 
+);
+   
 
- function moveright() {
-    const img = document.getElementById("car1");
-     img.style.left = `${img.offsetLeft + 10}px`;
+greenbtn.addEventListener("click", function move() {
+  console.log(canmove);
+  canmove = true;
+  console.log(canmove);
+
+  interval = setInterval(() => {
+    moveright();
+  }, 20);
+});
+
+function fontcolor(x) {
+  document.getElementById("demo").style.color = x;
+}
+
+function moveright() {
+  const img = document.getElementById("car1");
+  console.log("code sucess");
+
+  img.style.left = left + "px";
+
+  left += 10;
+  console.log(left);
+
+  if (left > 750) {
+    left = -100;
   }
-//   function moveleft() {
-//     const img = document.getElementById('car1');
-//     img.style.left = Number(img.style.left.slice(0, -2)) - 10 + 'px';
-//   }
+}

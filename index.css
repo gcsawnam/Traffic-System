@@ -72,7 +72,7 @@ body {
 .child3 #red {
   background-color: #ee1212;
 }
-#blue {
+#green {
   background-color: #5ceb1a;
 }
 #yellow {
@@ -88,7 +88,6 @@ body {
 .child2 #car1{
 position: absolute;
 top:180px;
-left: 20px;
-animation-delay: 0s;
 
 }
+
