@@ -4,10 +4,11 @@ let car = document.getElementById("car1");
 var left = 10;
 let redbutton = document.getElementById("red");
 let cannotmove = false;
-var interval;
-let yellowbtn = document.getElementById('yellow');
+let interval;
+let yellowbtn = document.getElementById("yellow");
 
 redbutton.addEventListener("click", function move1() {
+  document.getElementById("demo").innerHTML = "Red";
   console.log(cannotmove);
   cannotmove = true;
   console.log(cannotmove);
@@ -17,16 +18,16 @@ redbutton.addEventListener("click", function move1() {
 });
 
 yellowbtn.addEventListener("click", function slowdown() {
+  clearInterval(interval);
+  document.getElementById("demo").innerHTML = "yellow";
+  console.log("clearinterval");
   interval = setInterval(() => {
     moveright();
   }, 800);
-
-}
-
-);
-   
+});
 
 greenbtn.addEventListener("click", function move() {
+  document.getElementById("demo").innerHTML = "green";
   console.log(canmove);
   canmove = true;
   console.log(canmove);
@@ -41,10 +42,9 @@ function fontcolor(x) {
 }
 
 function moveright() {
-  const img = document.getElementById("car1");
   console.log("code sucess");
 
-  img.style.left = left + "px";
+  car.style.left = left + "px";
 
   left += 10;
   console.log(left);
