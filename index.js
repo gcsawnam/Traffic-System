@@ -8,7 +8,7 @@ let interval;
 let yellowbtn = document.getElementById("yellow");
 
 redbutton.addEventListener("click", function move1() {
-  document.getElementById("demo").innerHTML = "Red";
+  document.getElementById("demo").innerHTML = "You pressed Red";
   console.log(cannotmove);
   cannotmove = true;
   console.log(cannotmove);
@@ -19,15 +19,16 @@ redbutton.addEventListener("click", function move1() {
 
 yellowbtn.addEventListener("click", function slowdown() {
   clearInterval(interval);
-  document.getElementById("demo").innerHTML = "yellow";
+  document.getElementById("demo").innerHTML = "You pressed yellow";
   console.log("clearinterval");
   interval = setInterval(() => {
     moveright();
-  }, 800);
+  }, 200);
 });
 
 greenbtn.addEventListener("click", function move() {
-  document.getElementById("demo").innerHTML = "green";
+  clearInterval(interval);
+  document.getElementById("demo").innerHTML = "You pressed green";
   console.log(canmove);
   canmove = true;
   console.log(canmove);
